@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="module" src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Morse Code Translator</title>
+  </head>
+
+  <body>
+    <div id="container" class="container">
+      <header>
+        <h1>Morse Code Translator</h1>
+      </header>
+
+      <div class="container__io">
+        <h3>Input</h3>
+        <textarea id="input" placeholder="Input text here"></textarea>
+      </div>
+
+      <div class="container__io">
+        <h3>Output</h3>
+        <textarea id="output" placeholder="Output here" readonly></textarea>
+      </div>
+
+      <div class="info">
+        <p>When inputting Morse Code, please space words using a '/', and letters with a space. It should auto detect the input language and output accordingly.</p>
+        <p>If you click on the output it will copy to clipboard.</p>
+      </div>
+
+      <footer>
+        Created by Jess with HTML, SASS, JS, lots of coffee ☕ and (almost) no sleep. 
+      </footer>
+    </div>
+  </body>
+</html>

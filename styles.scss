@@ -1,0 +1,70 @@
+$monoFont: 'Noto Sans Mono', monospace;
+$container-min-width: 750px;
+
+@mixin flex-box($direction: row, $justify: center, $align: center, $wrap: wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include flex-box();
+  font-family: $monoFont;
+}
+
+.container {
+  @include flex-box($justify: space-between);
+  height: 100vh;
+  width: 75%;
+  min-width: $container-min-width;
+
+  & header {
+    @include flex-box();
+    //background-color: aqua;
+    height: 10%;
+    width: 100%;
+
+    & h1 {
+      font-size: 50px;
+    }
+  }
+  
+  &__io {
+    width: 45%;
+    height: 40%;
+    font-size: 30px;
+    
+    & h3 {
+      margin-bottom: 20px;
+    }
+    & textarea {
+      width: 95%;
+      height: 100%;
+      padding: 2%;
+      resize: none;
+      font-size: 17px;
+      
+      &::placeholder {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  & .info {
+    width: 100%;
+    height: 5%;
+
+    & p {
+      margin-top: 10px;
+    }
+  }
+
+
+}
