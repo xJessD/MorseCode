@@ -33,7 +33,7 @@ describe("morseToEng Tests", () => {
 describe("engToMorse Tests", () => {
 
   test('Empty input engToMorse', () => {
-    expect(funct.engToMorse(" ")).toBe("/");
+    expect(funct.engToMorse(" ")).toBe("");
   });
 
   test('To be defined', () => {

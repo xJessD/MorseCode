@@ -31,11 +31,11 @@ export const morseToEng = (text) => {
  */
 export const engToMorse = (text) => {
     // Split into words
-    const wordsE = text.toUpperCase().split("");
+    const wordsE = text.trim().toUpperCase().split("");
     
     // Match letters to Morse Code equiv
     const translated = wordsE.map(item => {
-      return dict[item] ? dict[item] : "/";
+      return dict[item] ? dict[item] : '/';
     }).join(" ");
 
     return translated;

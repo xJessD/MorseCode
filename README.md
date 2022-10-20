@@ -7,7 +7,6 @@ This is a super minimal looking Morse Code translator made with HTML, SASS and J
 - Translates between Morse Code and English
 - Auto-detection for both languages
 - Outputs while entering
-- 
 
 
 ## MVP
