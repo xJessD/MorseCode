@@ -1,6 +1,8 @@
 #
 # Morse Code Translator
+![Screenshot](/assets/Screenshot_112.png?raw=true "Site Preview")
 
+# Intro
 This is a super minimal looking Morse Code translator made with HTML, SASS and JS. It is still a work in progress as there are some issues that it still has. 
 
 ## Some features include:
